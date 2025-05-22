@@ -40,7 +40,7 @@ export function Projects(){
                         <CardMedia
                           component="img"
                           height="100"
-                          image={`src/assets/card-banners/${n.cover}`}
+                          image={new URL(`../../assets/card-banners/${n.cover}`, import.meta.url).href}
                         />
                         <CardContent>
                           <Typography gutterBottom variant="h5" component="div">

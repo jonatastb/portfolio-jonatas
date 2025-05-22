@@ -32,7 +32,7 @@ export function Technologies() {
                 >
                   <CardContent className="card-content" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'row' }}>
                     <div>
-                      <img src={`src/assets/languages-icons/${t.title}.png`} alt="" style={{ width: '50px', marginRight: '5px' }} />
+                      <img src={new URL(`../../assets/languages-icons/${t.title}.png`, import.meta.url).href} alt="" style={{ width: '50px', marginRight: '5px' }} />
                     </div>
                     <div style={{ display: 'flex', flexDirection: 'column' }}>
                       <Typography level="title-lg" id="card-description" sx={{ display: "flex", alignItems: 'center', fontWeight: 600, fontFamily: 'Poppins' }}>
