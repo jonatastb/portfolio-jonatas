@@ -1,0 +1,33 @@
+* {
+  font-family: "Arvo", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+:target {
+  scroll-margin-top: -1px;
+}
+body {
+  background-color: #f8f8f8;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 1px;
+  background-color: #000000;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 10px;
+}
+ul:first-of-type {
+  background-color: #1a1a1a !important;
+  border: 1px rgb(248, 248, 248, 0.5) solid;
+  border-radius: 0 !important;
+  font-weight: 200 !important;
+}
+ul:first-of-type li {
+  letter-spacing: 2px;
+}
