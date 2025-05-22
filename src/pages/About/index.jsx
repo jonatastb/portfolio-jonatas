@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { LanguageContext } from "../../Context/LanguageContext";
 import {AboutContainer} from './styles'
+import aboutImage from '../../assets/images/about-image.png'
 
 export function About(){
   const { content } = useContext(LanguageContext);
@@ -9,7 +10,7 @@ export function About(){
     <>
       <AboutContainer id='about'>
         <div className='image'>
-          <img  src={new URL(`../../assets/images/about-image.png`, import.meta.url).href} alt="Jonatas Bueno" />
+          <img  src={aboutImage} alt="Jonatas Bueno" />
         </div>
         <div className='informations'>
           <h2>
