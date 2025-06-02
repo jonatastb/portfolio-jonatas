@@ -20,9 +20,17 @@ background-color: #1a1a1a;
     letter-spacing: 2px;
     font-weight: 200;
     font-family: "Poppins";
-    border: 1px rgba(248, 248, 248, 0.5) solid;
+    border: 1px #797979 solid;
     background-color: transparent;
+    box-shadow: 5px 5px 1px #f8f8f8 !important;
     align-items: center;
+
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      cursor: pointer;
+      transform: translateY(-10px);
+      box-shadow: 10px 10px 1px #f8f8f8 !important;
+    }
   }
 
   .select-div:hover {
@@ -80,6 +88,7 @@ background-color: #1a1a1a;
     width: calc(100% + 1rem);
     line-height: 30px;
     font-weight: 200 !important;
+    background-color: #1a1a1a;
     letter-spacing: 1px;
   }
   a:hover {
@@ -94,7 +103,21 @@ background-color: #1a1a1a;
 /* Responsividade */
 
 
+@media (max-width: 1200px) {
+min-height: 100vh;
+height: auto;
+
+  #presentation h1 {
+    font-size: 4rem;
+  }
+  #presentation h3 {
+    font-size: 1.5rem;
+  }
+
+ 
+}
 @media (max-width: 768px) {
+
   padding: 3rem 5rem;
   padding-top: 4rem;
   height: 90vh;
@@ -102,6 +125,7 @@ background-color: #1a1a1a;
     flex-direction: column;
     align-items: start;
   }
+  
   #presentation h1 {
     font-size: 5.5rem;
   }
@@ -123,21 +147,24 @@ background-color: #1a1a1a;
   padding-top: 4rem;
   height: 90vh;
   #presentation h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     margin: 1rem
     }
-    #presentation h3 {
-      margin: 1rem ;
-      font-size: 1.4rem;
-    }
-    #list-menu ul {
-      margin-left: 1rem;
+  #presentation h3 {
+    margin: 1rem ;
+    font-size: 1.4rem;
+  }
+  #career {
+    font-size: .876rem;
+  }
+  #list-menu ul {
+    margin-left: 1rem;
 
-      li {
-        font-size: 1.2rem;
-        line-height: 70px;
-      }
+    li {
+      font-size: 1.2rem;
+      line-height: 70px;
     }
+  }
 }
 
 `;

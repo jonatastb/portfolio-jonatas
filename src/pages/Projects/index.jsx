@@ -26,7 +26,7 @@ export function Projects(){
             {
               content.projects.list.map((n,i) => (
                 <div key={i} className="cards">
-                  <Tooltip title={
+                  <Tooltip  title={
                     n.link ?
                     <React.Fragment>
                       <span style={{display: 'flex', alignItems: 'center', fontFamily: 'Poppins, sans-serif'}}>
@@ -34,7 +34,7 @@ export function Projects(){
                         {content.projects.linkTitle}
                       </span>
                     </React.Fragment> : ''
-                  } TransitionComponent={Zoom} placement="right" arrow>
+                  } TransitionComponent={Zoom} placement="top" arrow>
                     <Card className='card'>
                       <CardActionArea href={n.link} target='_blank'>
                         <CardMedia

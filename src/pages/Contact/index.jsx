@@ -10,7 +10,12 @@ import Chip from '@mui/joy/Chip';
 
 export function Contact() {
   const { content } = useContext(LanguageContext);
-  console.log(content.contact.contacts)
+
+
+  const goTo = (link) => {
+    window.open(link, '_blank')
+
+  }
   return (
     <>
       <ContactContainer id="contact">
@@ -23,8 +28,10 @@ export function Contact() {
             content.contact.contacts.map((c, i) => (
               <Card className='card' key={i}>
                 <CardActionArea
+                  component="a"
                   href={c.url}
-                  target='_blank'
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <CardContent sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     <img src={new URL(`../../assets/contact-logos/${i}.png`, import.meta.url).href} width={50} alt="" />
@@ -36,8 +43,8 @@ export function Contact() {
               </Card>
             ))
           }
-        </div>
-      </ContactContainer>
+        </div >
+      </ContactContainer >
     </>
   )
 }

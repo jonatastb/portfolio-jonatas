@@ -18,16 +18,33 @@ export const ContactContainer = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
   }
 
   .card {
+    background-color: #1a1a1a;
+    border: 1px solid #797979;
+    box-shadow: 5px 5px 1px #f8f8f8 !important;
+    color: #f8f8f8;
     border-radius: 0px;
     padding: 5px;
-     width: 8rem;
-      height: 8rem;
+    min-width: 8rem;
+    min-height: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     img {
         width: 60px;
-      }
+    }
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 10px 10px 1px #f8f8f8 !important;
+    }
   }
 
   /* Responsividade */

@@ -24,7 +24,18 @@ export const ProjectsContainer = styled.div`
     min-height: 16rem;
   }
   .card {
-    height: 100%;
+    min-height: 100%;
+    border-radius: 0px;
+    a {
+      height: 100%;
+    }
+
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      cursor: pointer;       
+      transform: translate(-5px, -5px);
+      box-shadow: 1px 1px 3px #797979 !important;
+    }
   }
 
   .stack {
@@ -56,17 +67,21 @@ export const ProjectsContainer = styled.div`
   @media (max-width: 1200px) {
     padding: 4rem 8rem;
     .cards {
-      width: 30%;
+      min-width: 50%;
     }
   }
-
+  @media (max-width: 860px) and (orientation: landscape) {
+    .cards {
+      min-width: 100%;
+    }
+  }
   @media (max-width: 768px) {
     padding: 3rem 5rem;
     h2 {
       font-size: 2.5rem;
     }
     .cards {
-      width: 35%;
+      min-width: 100%;
     }
   }
 

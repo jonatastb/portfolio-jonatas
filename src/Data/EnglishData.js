@@ -8,7 +8,6 @@ export const EnglishData = {
     {opt: 'Technologies', link: '#technologies'},
     {opt: 'Projects', link: '#projects'},
     {opt: 'Contact', link: '#contact'},
-    {opt: 'More', link: '#'},
   ],
   about: {
     title: 'Hello!',
@@ -22,8 +21,8 @@ export const EnglishData = {
   technologies_titles: {
     principal:'Technologies',
     main: 'Main ones I worked on',
-    others: 'Others I know',
-    design: 'Patterns and Principles that I use',
+    others: 'Others',
+    design: 'Patterns and Principles',
     exp: 'experience'
   },
   technologies: {
@@ -240,13 +239,13 @@ export const EnglishData = {
     ]
   },
   contact: {
-    title: "Know more or contact me:",
+    title: "Contact me:",
     contacts: [
-      {name: "LinkedIn", ulr: "https://www.linkedin.com"},
-      {name: "Phone", url: "tel:11999999999"},
-      {name: "GitHub", ulr: "https://github.com/jonatastb"},
-      {name: "E-mail", ulr: "mailto:q0u0u@example.com"},
-      {name: "Resume", url: "/"},
+      {name: "LinkedIn", url: "https://www.linkedin.com/in/jonatas-tb/"},
+      {name: "E-mail", url: "mailto:jonatas.bueno@outlook.com"},
+      {name: "Phone", url: "tel:+5541987156232"},
+      {name: "GitHub", url: "https://github.com/jonatastb"},
+      {name: "Resume", url: "https://drive.google.com/file/d/1uk5yhaLc_bAI6VTzQrN0UgXkyNPNsxN0/view?usp=sharing"},
     ],
   }
 }

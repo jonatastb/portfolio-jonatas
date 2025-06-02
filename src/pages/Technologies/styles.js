@@ -42,11 +42,13 @@ export const TechnologiesContainer = styled.div`
       min-width: 200px;
       margin: 10px !important;
       user-select: none;
-      border: 1px #797979 solid;
-      background-color: #f8f8f8 !important;
+      box-shadow: 5px 5px 1px #f8f8f8 !important;
+      background-color: #1a1a1a !important;
       border-radius: 0px;
-      &:hover {
-        cursor: pointer;
+      transition: all 0.2s ease-in-out;
+       &:hover {
+        transform: translateY(-10px);
+        box-shadow: 10px 10px 1px #f8f8f8 !important;
       }
     }
   }
@@ -67,9 +69,16 @@ export const TechnologiesContainer = styled.div`
       min-width: auto;
       padding: 1px 10px ;
       box-shadow: 5px 5px 1px #f8f8f8 !important;
+      background-color: #1a1a1a !important;
       border: 1px #797979 solid;
       font-weight: 400 !important;
       background-color: #1a1a1a !important;
+      transition: all 0.2s ease-in-out;
+       &:hover {
+        cursor: pointer;       
+        transform: translateY(-5px);
+        box-shadow: 7px 7px 1px #f8f8f8 !important;
+      }
     }
   }
   @media (max-width: 1440px) {
@@ -87,19 +96,39 @@ export const TechnologiesContainer = styled.div`
           display: flex;
           flex-wrap: wrap;
           .tech-card {
-            width: 25%;
+            width: 35%;
           }
         }
       }
   }
-
+@media (max-width: 860px) and (orientation: landscape) {
+    .main {
+      
+        .cards-container {
+          justify-content: space-evenly;
+          .tech-card {
+            width: 100%;
+            .card-content {
+              justify-content: space-evenly;
+            }
+          }
+        }
+    }
+}
   @media (max-width: 768px) {
     padding: 3rem rem;
+    .secondary h2 {
+      margin-bottom: 1.5rem;
+      div {
+        padding: 8px;
+      }
+    }
     .main h1, .secondary h1 {
       font-size: 2.5rem;
-      margin-top: 1rem;
+      margin-top: rem;
       .cards-container {
           .tech-card {
+
             background-color: red !important;
           }
       }
@@ -109,7 +138,7 @@ export const TechnologiesContainer = styled.div`
     .main {
         .cards-container {
           .tech-card {
-            width: 40%;
+            width: 100%;
           }
         }
       }

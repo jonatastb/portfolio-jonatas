@@ -20,6 +20,14 @@ export const AboutContainer = styled.div`
       border: 40px #1a1a1a solid;
       max-width: 30rem;
       width: 70%;
+      transition: all 0.2s ease-in-out;
+    }
+    &:hover {
+      cursor: pointer;
+      img {
+        transform: translate(-10px, -10px);
+        box-shadow: 1px 1px 3px #797979 !important;
+      }
     }
   }
 
@@ -61,6 +69,7 @@ export const AboutContainer = styled.div`
     }
   }
   }
+  
   @media (max-width: 1200px) {
     padding: 3rem 10rem;
     
@@ -82,7 +91,12 @@ export const AboutContainer = styled.div`
         font-weight: 300;
       }
     }
-
+  @media (max-width: 860px) and (orientation: landscape) {
+       flex-direction: column;
+       .image {
+        margin-bottom: 1rem; 
+       }
+  }
   @media (max-width: 768px) {
     padding: 3rem 5rem;
     flex-direction: column;
@@ -96,7 +110,11 @@ export const AboutContainer = styled.div`
       width: 90%;
     }
     .image{
-      display: none;
+      display: flex;
+      justify-content: center;
+      img {
+        border: 50px #1a1a1a solid;
+      }
     } 
     
   }
@@ -112,8 +130,7 @@ export const AboutContainer = styled.div`
       width: 100%;
     }
     .image img {
-      width: 50%;
-      border-width: 20px;
+      border: 50px #1a1a1a solid;
     }
   }
 `;

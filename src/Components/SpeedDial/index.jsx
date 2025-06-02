@@ -5,11 +5,12 @@ import { LanguageContext } from "../../Context/LanguageContext";
 import { useContext, useState, useEffect } from "react";
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-
+import br from '../../assets/flags/br.png'
+import us from '../../assets/flags/us.png'
 
 import TranslateIcon from '@mui/icons-material/Translate';const actions = [
-  { icon: 'Pt', name: 'Português do Brasil', value: 'br' },
-  { icon: 'En', name: 'US English', value: 'eua' },
+  { icon: br, name: 'Português (Brasil)', value: 'br' },
+  { icon: us, name: 'English (US)', value: 'en' },
 ];
 
 export default function BasicSpeedDial() {
@@ -52,16 +53,15 @@ export default function BasicSpeedDial() {
       )}
         <SpeedDial
           ariaLabel="SpeedDial"
-          sx={{ position: 'absolute', bottom: 16, right: 16, borderRadius: '0px' }}
+          sx={{ position: 'absolute', bottom: 16, right: 16, borderRadius: '10px' }}
           icon={<TranslateIcon />}
           className='speed-dial'
-          direction={'left'}
         >
           {actions.map((action) => (
             <SpeedDialAction
               className='button'
               key={action.name}
-              icon={action.icon}
+              icon={<img src={action.icon}  style={{ width: 24, height: 24 }} />}
               tooltipTitle={action.name}
               onClick={() => setCountry(action.value)}
             />

@@ -8,7 +8,6 @@ export const PortugueseData = {
     {opt: 'Tecnologias', link: '#technologies'},
     {opt: 'Projetos', link: '#projects'},
     {opt: 'Contato', link: '#contact'},
-    {opt: 'Mais', link: '#'},
   ],
   about: {
     title: 'Olá!',
@@ -22,8 +21,8 @@ export const PortugueseData = {
   technologies_titles: {
     principal:'Tecnologias',
     main: 'Principais que trabalhei',
-    others: 'Outras que tenho conhecimento',
-    design: 'Padrões e Princípios que uso',
+    others: 'Outras',
+    design: 'Padrões e Princípios',
     exp: 'Experiência'
   },
   technologies: {
@@ -236,13 +235,13 @@ export const PortugueseData = {
     ]
   },
   contact: {
-    title: "Saiba mais ou fale comigo em:",
+    title: "Fale comigo em:",
     contacts: [
-      {name: "LinkedIn", ulr: "https://www.linkedin.com"},
-      {name: "Email", ulr: "mailto:q0u0u@example.com"},
-      {name: "Telefone", ulr: "tel:11999999999"},
-      {name: "GitHub", ulr: "https://github.com/jonatastb"},
-      {name: "Curriculo", ulr: "/"}
-    ]
+      {name: "LinkedIn", url: "https://www.linkedin.com/in/jonatas-tb/"},
+      {name: "E-mail", url: "mailto:jonatas.bueno@outlook.com"},
+      {name: "Telefone", url: "tel:+5541987156232"},
+      {name: "GitHub", url: "https://github.com/jonatastb"},
+      {name: "Curriculo", url: "https://drive.google.com/file/d/1tCQuco5mRQOHUeVoTHp_0SZrUVkiahWA/view?usp=sharing"},
+    ],
   }
 }

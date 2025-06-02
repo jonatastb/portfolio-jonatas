@@ -28,17 +28,17 @@ export function Technologies() {
                   variant="outlined"
                   orientation="horizontal"
                   className="tech-card"
-                  sx={{ margin: '0 10px' }}
+                  sx={{ margin: '0 10px'}}
                 >
-                  <CardContent className="card-content" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'row' }}>
+                  <CardContent className="card-content" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'row', color: '#f8f8f8'  }}>
                     <div>
                       <img src={new URL(`../../assets/languages-icons/${t.title}.png`, import.meta.url).href} alt="" style={{ width: '50px', marginRight: '5px' }} />
                     </div>
                     <div style={{ display: 'flex', flexDirection: 'column' }}>
-                      <Typography level="title-lg" id="card-description" sx={{ display: "flex", alignItems: 'center', fontWeight: 600, fontFamily: 'Poppins' }}>
+                      <Typography level="title-lg" id="card-description" sx={{ display: "flex", alignItems: 'center', fontWeight: 600, fontFamily: 'Poppins', color: '#f8f8f8' }}>
                         {t.title}
                       </Typography>
-                      <Typography level="title-sm" id="card-description" sx={{ display: "flex", alignItems: 'center', fontWeight: 400, fontFamily: 'Poppins' }}>
+                      <Typography level="title-sm" id="card-description" sx={{ display: "flex", alignItems: 'center', fontWeight: 400, fontFamily: 'Poppins', color: '#f8f8f8' }}>
                         {t.subtitle}
                       </Typography>
                       <Typography level="body-md" aria-describedby="card-description" textAlign={'center'}>
@@ -87,7 +87,7 @@ export function Technologies() {
         <hr style={{ width: '100%', opacity: '0.5' }} />
         <div className="secondary" >
           <h2>{content.technologies_titles.design}</h2>
-          <div style={{ display: 'flex', flexDirection: 'row' }}>
+          <div style={{ display: 'flex', flexDirection: 'row', padding: '8px' }}>
             {
               ['MVC', 'SOLID', 'TDD', 'DDD'].map((d, i) => (
                 <Card
